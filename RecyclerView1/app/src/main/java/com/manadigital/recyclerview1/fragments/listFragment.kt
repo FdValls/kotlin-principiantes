@@ -46,12 +46,13 @@ class listFragment : Fragment() {
 
         //Creo la Lista Dinamica
         for (i in 1..5) {
-            contactos.add(Contacto("Pedro.$i",26, Contacto.Constants.cursoA))
-            contactos.add(Contacto("Rodolfo.$i",30, Contacto.Constants.cursoA))
-            contactos.add(Contacto("Emilio.$i",28, Contacto.Constants.cursoB))
-            contactos.add(Contacto("Luis.$i",37, Contacto.Constants.cursoB))
-            contactos.add(Contacto("Carlos.$i", 42, Contacto.Constants.cursoC))
-            contactos.add(Contacto("David.$i",21, Contacto.Constants.cursoC))
+            contactos.add(Contacto())
+            contactos.add(Contacto())
+            contactos.add(Contacto())
+            contactos.add(Contacto())
+            contactos.add(Contacto())
+            contactos.add(Contacto())
+            contactos.add(Contacto())
         }
 
         //Configuración Obligatoria

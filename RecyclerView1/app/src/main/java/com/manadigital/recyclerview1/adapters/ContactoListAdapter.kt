@@ -24,7 +24,10 @@ class ContactoListAdapter(
 
     override fun onBindViewHolder(holder: ContactoHolder, position: Int) {
 
-        holder.setName(contactsList[position].nombre)
+        contactsList[position].nombre?.let { holder.setName(it) }
+        contactsList[position].email?.let { holder.setEmail(it) }
+        contactsList[position].urlGravatar?.let { holder.setGravatar(it) }
+
 
         holder.getCardLayout().setOnClickListener{
             onItemClick(position)
